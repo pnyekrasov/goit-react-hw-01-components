@@ -1,13 +1,24 @@
 import { Profile } from "./Social_network_profile/Profile";
 import { Statistics } from "./Statistics_section/Statistics";
+import { FriendList } from "./Friends_list/Friends";
+import { TransactionHistory } from "./Transaction_history/TransactionHistory";
+import { GlobalStyle } from "./GlobalStyle";
 import user from './user.json';
-import data from './data.json'
+import data from './data.json';
+import friends from './friends.json';
+import transactions from './transactions.json'
+
+
+
 
 export const App = () => {
   return (
-    <div>
+    <>
+      <GlobalStyle />
       <Profile item={user} />
       <Statistics stats={data} />
-    </div>
+      <FriendList items={friends} />
+      <TransactionHistory items={transactions} />
+    </>
   );
 };
