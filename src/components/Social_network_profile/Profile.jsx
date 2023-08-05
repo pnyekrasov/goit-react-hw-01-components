@@ -1,32 +1,34 @@
+import { Card, Border, User, Table } from "./Profile.styled";
 
 export const Profile = ({ item }) => {
    const { avatar, location, stats, tag, username } = item;
     return (
-<div className="profile">
-  <div className="description">
+      <Card>
+        <Border>
+  <User>
     <img
       src={avatar}
-      alt={username}
-      className="avatar"
+      alt={username}      
     />
-    <p className="name">{username}</p>
-    <p className="tag">@{tag}</p>
-    <p className="location">{location}</p>
-  </div>
-  <ul className="stats">
+    <h2>{username}</h2>
+    <p>@{tag}</p>
+    <p>{location}</p>
+  </User>
+  <Table>
     <li>
-      <span className="label">Followers</span>
-      <span className="quantity">{stats.followers}</span>
+      <span>Followers</span>
+      <span><b>{stats.followers}</b></span>
     </li>
     <li>
-      <span className="label">Views</span>
-      <span className="quantity">{stats.views}</span>
+      <span>Views</span>
+      <span><b>{stats.views}</b></span>
     </li>
     <li>
-      <span className="label">Likes</span>
-      <span className="quantity">{stats.likes}</span>
+      <span>Likes</span>
+      <span><b>{stats.likes}</b></span>
     </li>
-  </ul>
-</div>
+          </Table>
+          </Border>
+</Card>
     );
 };
