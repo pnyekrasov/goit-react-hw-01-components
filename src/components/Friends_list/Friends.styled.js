@@ -17,13 +17,6 @@ export const ListItem = styled.li`
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
-  span {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: ${({ online }) => (online ? 'green' : 'red')};
-  }
-
   img {
     width: 80px;
     height: 80px;
@@ -34,4 +27,11 @@ export const ListItem = styled.li`
   p {
     font-size: 24px;
   }
+`;
+
+export const Ikon = styled.span`
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: ${({ online }) => (online ? 'green' : 'red')};
 `;

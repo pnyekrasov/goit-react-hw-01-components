@@ -10,7 +10,7 @@ export const FriendList = ({ items }) => {
       <List>
       {
         items.map(items => (
-          <ListItem key={items.id} online={items.isOnline}>
+          <ListItem key={items.id}>
       <FriendCard {...items} />
       </ListItem>
         ))
