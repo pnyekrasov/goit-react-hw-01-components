@@ -6,7 +6,7 @@ import {
   ItemName,
   ItemNumber,
 } from './Statistics.styled';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 export const Statistics = ({ title, stats }) => {
   return (
