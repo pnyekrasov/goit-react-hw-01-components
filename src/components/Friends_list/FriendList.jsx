@@ -20,7 +20,7 @@ FriendList.propTypes = {
       id: PropTypes.number,
       avatar: PropTypes.string,
       name: PropTypes.string,
-      isOnlin: PropTypes.bool,
+      isonlin: PropTypes.boolen,
     })
   ),
 };
