@@ -1,6 +1,6 @@
 import { Profile } from "./Social_network_profile/Profile";
 import { Statistics } from "./Statistics_section/Statistics";
-import { FriendList } from "./Friends_list/Friends";
+import { FriendList } from "./Friends_list/FriendList";
 import { TransactionHistory } from "./Transaction_history/TransactionHistory";
 import { GlobalStyle } from "./GlobalStyle";
 import user from './user.json';

@@ -6,7 +6,6 @@ export const Card = styled.div`
   background-color: #ebf2fc;
 `;
 export const Border = styled.div`
-  border: 0.5px solid #aae3f6;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 `;
 
@@ -38,6 +37,12 @@ export const User = styled.div`
 export const Table = styled.ul`
   display: flex;
   background: #eef9fd;
+  border-top: 0.25px solid #aae3f6;
+
+  :nth-child(2) {
+    border-left: 0.25px solid #aae3f6;
+    border-right: 0.25px solid #aae3f6;
+  }
 
   li {
     display: flex;
@@ -46,7 +51,6 @@ export const Table = styled.ul`
     justify-content: center;
     width: calc(100% / 3);
     height: 66px;
-    border: 0.25px solid #aae3f6;
     font-size: 12px;
     color: gray;
   }
