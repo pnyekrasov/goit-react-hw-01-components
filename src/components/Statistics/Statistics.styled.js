@@ -3,16 +3,16 @@ import styled from 'styled-components';
 export const Container = styled.section`
   width: 400px;
   padding: 80px;
-  background-color: lightgray;
+  background-color: #c8c9cc;
 `;
 
 export const Text = styled.h2`
   padding: 30px 0;
   font-size: 24px;
-  color: darkslategray;
+  color: #003100;
   text-transform: uppercase;
   text-align: center;
-  background-color: white;
+  background-color: #fdfdfe;
 `;
 
 export const Stats = styled.ul`
@@ -25,7 +25,7 @@ export const Item = styled.li.attrs(({ $length }) => ({
   display: flex;
   flex-direction: column;
   width: calc(100% / ${({ $length }) => $length});
-  color: white;
+  color: #fff;
   background: ${getRandomHexColor};
 `;
 
