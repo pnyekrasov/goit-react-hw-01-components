@@ -45,10 +45,10 @@ export const Tr = styled.tr`
   text-transform: capitalize;
 
   :nth-child(even) {
-    border-left: 0.5px solid #c8c9cc;
+    border-left: 0.5px solid #eef0f2;
   }
 
   :nth-child(even) {
-    border-right: 0.5px solid #c8c9cc;
+    border-right: 0.5px solid #eef0f2;
   }
 `;
