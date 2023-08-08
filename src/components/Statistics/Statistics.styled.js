@@ -24,7 +24,7 @@ export const Item = styled.li.attrs(({ $length }) => ({
 }))`
   display: flex;
   flex-direction: column;
-  width: calc(100% / ${{ $length }});
+  width: calc(100% / ${({ $length }) => $length});
   color: white;
   background: ${getRandomHexColor};
 `;
