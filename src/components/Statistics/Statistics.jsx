@@ -14,7 +14,7 @@ export const Statistics = ({ title, stats }) => {
       <Text>{title ? title : 'Upload stats'}</Text>
       <Stats>
         {stats.map(({ id, label, percentage }) => (
-          <Item key={id}>
+          <Item key={id} $length={stats.length}>
             <ItemName>{label}</ItemName>
             <ItemNumber>{percentage}%</ItemNumber>
           </Item>

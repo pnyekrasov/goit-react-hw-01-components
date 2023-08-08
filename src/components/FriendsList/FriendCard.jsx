@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export const FriendCard = ({ avatar, name, isOnline }) => {
   return (
     <>
-      <Ikon isOnline={isOnline}></Ikon>
+      <Ikon $isOnline={isOnline}></Ikon>
       <img src={avatar} alt={name} width="48" />
       <p>
         <b>{name}</b>

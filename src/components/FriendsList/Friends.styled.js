@@ -29,9 +29,11 @@ export const ListItem = styled.li`
   }
 `;
 
-export const Ikon = styled.span`
+export const Ikon = styled.span.attrs(({ $isOnline }) => ({
+  $formadd: $isOnline || false,
+}))`
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: ${({ isOnline }) => (isOnline ? 'green' : 'red')};
+  background: ${({ $isOnline }) => ($isOnline ? 'green' : 'red')};
 `;

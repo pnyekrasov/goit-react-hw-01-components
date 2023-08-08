@@ -19,10 +19,12 @@ export const Stats = styled.ul`
   display: flex;
 `;
 
-export const Item = styled.li`
+export const Item = styled.li.attrs(({ $length }) => ({
+  $formadd: $length,
+}))`
   display: flex;
   flex-direction: column;
-  width: calc(100% / 5);
+  width: calc(100% / ${{ $length }});
   color: white;
   background: ${getRandomHexColor};
 `;
