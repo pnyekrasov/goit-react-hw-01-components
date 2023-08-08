@@ -6,7 +6,7 @@ import {
   ItemName,
   ItemNumber,
 } from './Statistics.styled';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 export const Statistics = ({ title, stats }) => {
   return (
@@ -22,4 +22,15 @@ export const Statistics = ({ title, stats }) => {
       </Stats>
     </Container>
   );
+};
+
+Statistics.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ),
 };

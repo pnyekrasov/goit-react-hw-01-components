@@ -33,5 +33,5 @@ export const Ikon = styled.span`
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: ${({ isonline }) => (isonline ? 'green' : 'red')};
+  background: ${({ isOnline }) => (isOnline ? 'green' : 'red')};
 `;
