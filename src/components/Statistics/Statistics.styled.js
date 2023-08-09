@@ -20,7 +20,7 @@ export const Stats = styled.ul`
 `;
 
 export const Item = styled.li.attrs(({ $length }) => ({
-  $length: $length || null,
+  $length: $length || 1,
 }))`
   display: flex;
   flex-direction: column;
