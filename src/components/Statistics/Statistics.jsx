@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
 export const Statistics = ({ title, stats }) => {
   return (
     <Container>
-      <Text>{title ? title : 'Upload stats'}</Text>
+      {title && <Text>{title}</Text>}
       <Stats>
         {stats.map(({ id, label, percentage }) => (
           <Item key={id} $length={stats.length}>

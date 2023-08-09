@@ -29,16 +29,6 @@ export const Item = styled.li.attrs(({ $length }) => ({
   background: ${getRandomHexColor};
 `;
 
-// export const Item = styled.li.attrs(({ $length }) => ({
-//   $formadd: $length,
-// }))`
-//   display: flex;
-//   flex-direction: column;
-//   width: calc(100% / ${({ $length }) => $length});
-//   color: #fff;
-//   background: ${getRandomHexColor};
-// `;
-
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
