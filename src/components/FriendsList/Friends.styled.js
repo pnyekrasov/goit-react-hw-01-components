@@ -30,7 +30,7 @@ export const ListItem = styled.li`
 `;
 
 export const Ikon = styled.span.attrs(({ $isOnline }) => ({
-  $formadd: $isOnline || false,
+  $isOnline: $isOnline || false,
 }))`
   width: 20px;
   height: 20px;
